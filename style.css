@@ -12,11 +12,17 @@ line-height:1.7;
 }
 
 header{
-background:#ffffff;
-position:sticky;
+position:fixed;
 top:0;
-box-shadow:0 2px 10px rgba(0,0,0,.08);
-z-index:1000;
+left:0;
+width:100%;
+padding:18px 0;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(255,255,255,.25);
+z-index:9999;
+transition:.4s;
 }
 
 nav{
@@ -25,13 +31,14 @@ margin:auto;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px;
+padding:0 25px;
 }
 
 nav h1{
 font-family:"Cormorant Garamond",serif;
 font-size:42px;
-color:#4a3528;
+letter-spacing:3px;
+color:white;
 }
 
 nav ul{
@@ -41,8 +48,8 @@ list-style:none;
 }
 
 nav a{
+color:white;
 text-decoration:none;
-color:#4a3528;
 font-weight:500;
 transition:.3s;
 }
