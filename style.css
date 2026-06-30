@@ -130,17 +130,21 @@ background:#9c7648;
 section{
 max-width:1200px;
 margin:auto;
-padding:90px 25px;
+padding:110px 30px;
 }
 
 section h2{
-font-size:44px;
+font-size:58px;
 font-family:"Cormorant Garamond",serif;
 margin-bottom:25px;
 text-align:center;
 color:#4a3528;
 }
-
+section p{
+    font-size:21px;
+    line-height:1.9;
+    color:#555;
+}
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
