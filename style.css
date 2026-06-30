@@ -145,11 +145,14 @@ section p{
     line-height:1.9;
     color:#555;
 }
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:35px;
-margin-top:50px;
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:28px;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+    text-align:center;
+    transition:.35s;
+    overflow:hidden;
 }
 
 .card{
