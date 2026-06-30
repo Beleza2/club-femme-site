@@ -164,11 +164,14 @@ text-align:center;
 }
 
 .card img{
-width:100%;
-height:420px;
-object-fit:cover;
-border-radius:16px;
-margin-bottom:20px;
+    width:100%;
+    height:380px;
+    object-fit:cover;
+    border-radius:22px;
+    transition:.35s;
+}
+.card:hover img{
+    transform:scale(1.03);
 }
 
 .gallery{
