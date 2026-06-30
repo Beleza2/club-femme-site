@@ -175,3 +175,40 @@ border-radius:40px;
 text-decoration:none;
 color:white;
 }
+/* ===== MENU RESPONSIVO ===== */
+
+@media (max-width: 900px){
+
+nav{
+flex-direction:column;
+gap:20px;
+padding:20px;
+}
+
+nav ul{
+flex-direction:column;
+align-items:center;
+gap:15px;
+}
+
+.hero h2{
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+section{
+padding:70px 20px;
+}
+
+.card img{
+height:320px;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+}
