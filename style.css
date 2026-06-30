@@ -57,15 +57,38 @@ transition:.3s;
 nav a:hover{
 color:#b08b57;
 }
-
 .hero{
-height:90vh;
+
+height:100vh;
+
 display:flex;
-justify-content:center;
+
 align-items:center;
+
+justify-content:center;
+
 text-align:center;
-padding:30px;
+
+padding:40px;
+
+background:
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
+
+url("assets/images/IMG_1349.jpeg");
+
+background-size:cover;
+
+background-position:center;
+
+background-attachment:fixed;
+
 color:white;
+
+}
+
 
 background:
 linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
@@ -77,31 +100,62 @@ background-repeat:no-repeat;
 }
 
 .hero h2{
-font-size:60px;
+
+font-size:78px;
+
 font-family:"Cormorant Garamond",serif;
-margin-bottom:20px;
+
+margin-bottom:25px;
+
+font-weight:700;
+
+line-height:1.1;
+
 }
 
 .hero p{
-max-width:700px;
-margin:auto;
-font-size:20px;
-}
 
+max-width:760px;
+
+margin:auto;
+
+font-size:22px;
+
+opacity:.95;
+
+}
 .botao{
+
 display:inline-block;
-margin-top:35px;
-padding:15px 35px;
-background:#b08b57;
+
+margin-top:45px;
+
+padding:18px 42px;
+
+background:#B8905A;
+
 color:white;
+
 text-decoration:none;
+
 border-radius:50px;
-transition:.3s;
+
+font-weight:600;
+
+transition:.35s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
 }
 
 .botao:hover{
-transform:translateY(-3px);
+
+transform:translateY(-4px);
+
+background:#9c7648;
+
 }
+
 
 section{
 max-width:1200px;
