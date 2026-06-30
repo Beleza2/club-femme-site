@@ -11,11 +11,19 @@ color:#333;
 line-height:1.7;
 }
 
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+header{position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(14px);
+-webkit-backdrop-filter:blur(14px);
+
+border-bottom:1px solid rgba(255,255,255,.15);
+
+transition:.35s;
 }
 
 nav{
@@ -24,7 +32,7 @@ margin:auto;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:0 25px;
+padding:18px 30px;
 }
 
 nav h1{
