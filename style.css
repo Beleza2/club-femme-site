@@ -24,22 +24,7 @@ backdrop-filter:blur(14px);
 border-bottom:1px solid rgba(255,255,255,.15);
 
 transition:.35s;
-}
 
-nav{
-max-width:1200px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 30px;
-}
-
-nav h1{
-font-family:"Cormorant Garamond",serif;
-font-size:42px;
-letter-spacing:3px;
-color:white;
 }
 
 nav ul{
