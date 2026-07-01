@@ -1,32 +1,47 @@
-// Revelar elementos ao rolar
+const form = document.querySelector("form");
 
-const sections = document.querySelectorAll("section");
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-const reveal = () => {
+    const dados = new FormData(form);
 
-sections.forEach(section => {
+    const resposta = await fetch(form.action, {
+        method: "POST",
+        body: dados,
+        headers: {
+            "Accept": "application/json"
+        }
+    });
 
-const top = section.getBoundingClientRect().top;
+    if (resposta.ok) {
 
-if(top < window.innerHeight - 120){
+        form.innerHTML = `
+            <div style="
+                text-align:center;
+                padding:40px 20px;
+            ">
+                <div style="font-size:60px;">🎉</div>
 
-section.style.opacity = "1";
-section.style.transform = "translateY(0)";
+                <h2 style="margin-top:20px;">
+                    Cadastro realizado!
+                </h2>
 
-}
+                <p style="
+                    font-size:20px;
+                    margin-top:15px;
+                    color:#666;
+                ">
+                    Seja bem-vinda ao Club Femme.
+                    <br><br>
+                    Em breve entraremos em contato.
+                </p>
+            </div>
+        `;
+
+    } else {
+
+        alert("Ocorreu um erro. Tente novamente.");
+
+    }
 
 });
-
-}
-
-sections.forEach(section=>{
-
-section.style.opacity="0";
-section.style.transform="translateY(60px)";
-section.style.transition=".8s";
-
-});
-
-window.addEventListener("scroll",reveal);
-
-reveal();
